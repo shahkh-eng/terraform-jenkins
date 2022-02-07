@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git 'https://github.com/shahkh-eng/terraform-jenkins.git'
+                git branch: 'origin/master', url: 'https://github.com/shahkh-eng/terraform-jenkins.git'
             }
         }
         stage ("terraform init") {
