@@ -7,7 +7,7 @@ terraform {
  #     version = "~> 2.65"
     }
   }
-  backend "remote" {
+  backend "azurerm" {
     resource_group_name  = "jonnychipz-state"
     storage_account_name = "jonnychipztfstate"
     container_name       = "tstate"
