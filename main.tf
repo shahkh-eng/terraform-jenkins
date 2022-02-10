@@ -7,10 +7,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "jonnychipz-state"
-    storage_account_name = "jonnychipztfstate"
-    container_name       = "tstate"
-    key                  = "terraform.tfstate"
+    resource_group_name  = "myTFResourceGroup"
+    storage_account_name = "storagetest222"
+    container_name       = "newtest"
+    key                  = "terra.tfstate"
   }
 
 }
