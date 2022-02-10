@@ -12,7 +12,7 @@ pipeline {
         }
         stage ("terraform init") {
             steps {
-                bat 'terraform init -reconfigure'
+                bat 'terraform init'
             }
         }
         stage ("terraform fmt") {
